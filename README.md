@@ -1,17 +1,18 @@
 # Datediff
 
-An Android app to compare the date of photos to a preconfigured reference date.
+An Android app that lets you compare the capture date of a photo to one of 3 preconfigured reference dates — directly from the Android gallery's Share menu.
 
 ## Overview
 
-Datediff lets you set a reference date and then scan your photo library to see how far each photo's capture date is from that reference. This is useful for organizing photos around events, tracking timelines, or quickly finding photos taken before or after a specific moment.
+Datediff integrates with the Android share sheet. When viewing any photo in the gallery, tap **Share** and select **Datediff**. The app reads the photo's EXIF capture date and lets you pick one of your 3 configured reference dates to compare against. The result shows how many days before or after the reference date the photo was taken.
 
 ## Features
 
-- Set a preconfigured reference date
-- Browse photos and view the date difference relative to the reference
-- Display differences in days, weeks, or months
-- Visual indicators for photos taken before or after the reference date
+- Configure 3 independent reference dates (stored on device)
+- Appears as a share target when viewing photos in the gallery
+- Reads capture date from EXIF metadata (`DateTimeOriginal`)
+- Displays the difference in days, with direction (before / after / same day)
+- Works entirely offline, no account or internet required
 
 ## Requirements
 
@@ -25,13 +26,14 @@ Datediff lets you set a reference date and then scan your photo library to see h
    git clone https://github.com/fchaumeil/Datediff.git
    ```
 2. Open the project in Android Studio.
-3. Build and run on a device or emulator.
+3. Build and run on a device or emulator (API 26+).
 
 ## Usage
 
-1. Launch the app.
-2. Set your reference date in the settings.
-3. Browse your photos — each photo will display the number of days difference from the reference date.
+1. Launch the **Datediff** app and set your 3 reference dates using the date pickers.
+2. Open any photo in your gallery app.
+3. Tap **Share** → select **Datediff**.
+4. Tap one of the 3 reference date buttons to see the day difference.
 
 ## License
 
