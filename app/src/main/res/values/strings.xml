@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Datediff</string>
+
+    <!-- Main / Settings -->
+    <string name="settings_title">Reference Dates</string>
+    <string name="settings_subtitle">Configure up to 3 reference dates. Then share any photo to this app to compare.</string>
+    <string name="label_date1">Date 1</string>
+    <string name="label_date2">Date 2</string>
+    <string name="label_date3">Date 3</string>
+    <string name="pick_date">Pick date…</string>
+    <string name="not_set">Not set</string>
+
+    <!-- Compare -->
+    <string name="compare_title">Compare Photo Date</string>
+    <string name="photo_date_label">Photo taken: %1$s</string>
+    <string name="photo_date_unknown">Photo date: unknown (no EXIF data)</string>
+    <string name="choose_reference">Tap a reference date to compare:</string>
+
+    <!-- Button labels -->
+    <string name="btn_label">%1$d — %2$s</string>
+    <string name="btn_label_not_set">%1$d — Not configured</string>
+
+    <!-- Results -->
+    <string name="result_same_day">Photo was taken on the same day as Date %1$d (%2$s).</string>
+    <string name="result_after">Photo (%1$s) was taken %2$d day(s) AFTER Date %3$d (%4$s).</string>
+    <string name="result_before">Photo (%1$s) was taken %2$d day(s) BEFORE Date %3$d (%4$s).</string>
+
+    <!-- Errors -->
+    <string name="error_no_exif">Could not read the photo\'s capture date (no EXIF data).</string>
+</resources>
